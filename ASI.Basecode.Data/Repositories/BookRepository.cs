@@ -35,6 +35,7 @@ namespace ASI.Basecode.Data.Repositories
         public void UpdateBook(Book book)
         {
             _dbContext.Books.Update(book);
+            _dbContext.SaveChanges();
         }
 
         public void DeleteBook(int id)

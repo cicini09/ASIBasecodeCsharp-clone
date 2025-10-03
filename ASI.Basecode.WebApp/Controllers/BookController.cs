@@ -46,5 +46,12 @@ namespace ASI.Basecode.WebApp.Controllers
 
             return RedirectToAction("Index");
         }
+
+        [HttpPost]
+        public IActionResult Delete(int id)
+        {
+            _bookService.DeleteBook(id);
+            return RedirectToAction("Index");
+        }
     }
 }

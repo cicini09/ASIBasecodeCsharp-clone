@@ -29,15 +29,15 @@
                                 </div>
 
                                 <div>
-                                    <form asp-controller="Book" asp-action="DeleteConfirmed"
+                                    <form asp-controller="Book" asp-action="Delete"
                                           asp-route-id="@book.Id" method="post" class="d-inline">
-                                        @Html.AntiForgeryToken()
                                         <button type="submit" class="btn btn-sm btn-outline-danger w-100"
                                                 onclick="return confirm('Delete this book?');">
                                             Delete
                                         </button>
                                     </form>
                                 </div>
+
                             </div>
                         </div>
                     </div>
